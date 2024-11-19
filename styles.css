@@ -1,0 +1,60 @@
+img {
+  width: auto;
+  height: 300px;
+}
+
+h1 {
+  margin-bottom: 2px;
+}
+
+.custom-size-map {
+  width: auto; 
+  height: 500px;
+}
+
+.thumbnail {
+  width: auto;
+  height: 30vh;
+  z-index: 999;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: ease;
+  /* border: 10px solid white;  */
+}
+
+.thumbnail.scaled {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 85vh;
+  height: 85vh;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  border: 100vw solid white;
+  z-index: 1000;
+  background-color: white;
+}
+
+/* body {
+  font-size: 1.5vw;
+} */
+
+/* video {
+  width: auto;
+  height: 300px;
+}
+
+iframe {
+  width: auto;
+  height: 300px;
+} */
+
+/* .dates {
+  font-size: 1.2vw;
+  font-style: italic;
+  color: rgb(112, 112, 112);
+} */
+
+/* h1 {
+  color: rgb(255, 0, 102);
+} */
