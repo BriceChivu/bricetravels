@@ -40,7 +40,7 @@ def print_img_src(country: str):
             and name in untracked_files
         ):
             img = Image.open(name)
-            html_line = f'<img src="{name}" width="{img.width}" height="{img.height}" loading="lazy"/>'
+            html_line = f'<img src="{name}" width="{img.width}" height="{img.height}" loading="lazy" class="thumbnail" onclick="toggleScale(this)"/>'
             html_ouput += html_line + "\n"
     print(html_ouput)
     pyperclip.copy(html_ouput)
