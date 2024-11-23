@@ -47,6 +47,9 @@ details[open] summary::after {
   margin-left: 5px;
 }
 
+summary i {
+  margin-left: 5px; /* Add spacing to the left of the date */
+}
 
 
 .thumbnail {
