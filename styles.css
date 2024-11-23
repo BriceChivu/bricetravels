@@ -7,6 +7,47 @@ h1 {
   margin-bottom: 2px;
 }
 
+/* Style the <summary> element */
+summary {
+  display: flex; /* Use flexbox to position items */
+  align-items: center; /* Align vertically */
+  cursor: pointer;
+}
+
+/* Replace the default arrow with a custom one */
+summary::marker {
+  content: ""; /* Remove the default marker */
+}
+
+/* Add a custom arrow using a pseudo-element */
+summary::after {
+  content: "▼"; /* Downward pointing arrow */
+  font-size: 0.8em;
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+/* Rotate the arrow when details are open */
+details[open] summary::after {
+  transform: rotate(90deg); /* Rotate to point to the right */
+}
+
+/* Blinking colors animation */
+@keyframes blink-colors {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: green; }
+  75% { color: blue; }
+  100% { color: purple; }
+}
+
+.clickMe {
+  animation: blink-colors 1s infinite;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+
 
 .thumbnail {
   width: auto;
